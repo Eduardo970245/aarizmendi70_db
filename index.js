@@ -1,8 +1,10 @@
  const express = require('express');
   const pool = require('./db');
   const app = express();
+  const cors = require('cors');
   // Para que Express entienda JSON
   app.use(express.json()); 
+  app.use(cors());
 
 
   // Hola mundo
